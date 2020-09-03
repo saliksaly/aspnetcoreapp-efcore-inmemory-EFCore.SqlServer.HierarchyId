@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace ConsoleApp1.Data.Model
 {
@@ -7,6 +6,8 @@ namespace ConsoleApp1.Data.Model
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        public HierarchyId NodeHid { get; set; }
 
         /// <summary>
         /// Constructor.

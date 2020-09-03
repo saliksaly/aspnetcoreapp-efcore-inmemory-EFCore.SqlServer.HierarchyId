@@ -9,7 +9,7 @@ namespace ConsoleApp1.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseInMemoryDatabase(databaseName: "inmemdb");
+            optionsBuilder.UseInMemoryDatabase(databaseName: "inmemdb");//, x => x.UseHierarchyId());
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
