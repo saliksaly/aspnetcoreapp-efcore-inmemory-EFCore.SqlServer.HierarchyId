@@ -26,26 +26,11 @@ namespace ConsoleApp1
             {
                 foreach( var blog in context.Blogs)
                 {
-                    WL(blog.Name);
+                    Console.WriteLine((object) blog.Name);
                 }
             }
 
             Console.ReadKey();
         }
     }
-
-    #region Helpers
-    partial class Program
-    {
-        static void WL(object value)
-        {
-            Console.WriteLine(value);
-        }
-
-        static void RL()
-        {
-            Console.ReadLine();
-        }
-    }
-    #endregion
 }
